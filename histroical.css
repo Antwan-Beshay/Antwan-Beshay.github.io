@@ -120,38 +120,6 @@ text-shadow:
     opacity: 1;
   }
 }
-
-
-
-/* زر */
-.explore-button {
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: clamp(24px, 6vw, 80px);
-  font-weight: bold;
-  background-color: #fff700;
-  color: #000;
-  border-radius: 300px;
-  text-decoration: none;
-  opacity: 0;
-  animation: pop3d 0.6s ease forwards;
-  animation-delay: 4.6s;
-  box-shadow:
-    0 0 10px #fff700,
-    0 0 20px #ffcc00,
-    0 0 30px #ffaa00;
-}
-.explore-button:hover {
-  box-shadow:
-    0 0 20px #fff700,
-    0 0 30px #ffcc00,
-    0 0 40px #ffaa00;
-
-filter: brightness(1.2);
-    transition: transform 0.3s ease;
-    transform: translateZ(140px) scale(1.05);
-  cursor: pointer;
-}
 .space {
   height: 50px;
   width: 50px;
@@ -214,7 +182,14 @@ button {
   border-top-color: #00ffea;
   
 }
-
+@keyframes spin {
+  0%{ 
+    transform: rotate(0deg);
+   }
+  100%{ 
+    transform: rotate(360deg); 
+  }
+}
 .timer-percent {
   text-shadow:
       0 0 10px #00fff7,
@@ -226,9 +201,6 @@ button {
   cursor: progress;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+
 
 

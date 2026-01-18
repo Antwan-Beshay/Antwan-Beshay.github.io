@@ -87,9 +87,9 @@ body {
   }
 100%{
   box-shadow:
-        0 0 100x #fff700,
-        0 0 200x #ffcc00,
-        0 0 300x #ffaa00;
+        0 0 100px #fff700,
+        0 0 200px #ffcc00,
+        0 0 300px #ffaa00;
 }
 }
 .logo:hover {
@@ -99,10 +99,11 @@ body {
         0 0 40px #ffaa00;
     transition: transform 0.3s ease;
     transform: rotate(1.0turn);
-    filter: brightness(1.2);
+  
 }
 
 .Nam {
+  margin-right: 20px;
     font-size: xx-large;
   color: #00ffea;
   font-weight: 1000;
@@ -167,8 +168,8 @@ transform: skew(3deg, 2deg);
 }
  .img-card1 img{
       backdrop-filter: blur(100px);
-    width: 590px;
-    height: 490px;
+    width: 700px;
+    height: 600px;
     box-shadow:
         0 0 20px #fff700,
         0 0 30px #ffcc00,
@@ -504,17 +505,36 @@ font-size: large;
 
 
 
-.project{
-  margin-top: 550px;
+.letter{
   color: #00ffea;
-  text-align: center;
-font-size: xx-large;
-  font-family: Arial;
    text-shadow:
       0 0 10px #00fff7,
       0 0 25px #00c8b6,
       0 30px 40px rgba(0,0,0,0.8);
   animation: glow2 3s infinite;
+  gap: 3px;
+}
+.project{
+  font-weight: 900;
+  margin-top: 200px;
+  color: #00ffea;
+  text-align: center;
+   text-shadow:
+      0 0 10px #00fff7,
+      0 0 25px #00c8b6,
+      0 30px 40px rgba(0,0,0,0.8);
+  animation: glow2 3s infinite;
+  gap: 3px;
+}
+.project:hover{
+text-shadow:
+      0 0 10px #00fff7,
+      0 0 25px #00c8b6,
+      0 30px 40px rgba(0,0,0,0.8);
+  cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateZ(140px) scale(1.5)
+
 }
 
 @keyframes glow2 {
@@ -524,15 +544,20 @@ font-size: xx-large;
 
   50% {
     text-shadow:
-      0 0 10px #00fff7,
-      0 0 25px #00c8b6,
-      0 30px 40px rgba(0,0,0,0.8);
+      0 0 20px #00fff7,
+      0 0 35px #00c8b6,
+      0 40px 50px rgba(0,0,0,0.8);
   }
 
   100% {
     text-shadow:
       0 0 100px #00fff7,
       0 0 250px #00c8b6,
-      0 300px 400px rgba(0, 0, 0, 0.8);
+      0 300px 400px rgba(0, 0, 0, 1.8);
   }
+}
+
+.space{
+ display: block;
+  width: 50px;
 }
