@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="second.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antwan Beshay Labib
+        
+    </title>
+
+</head>
+<link rel="icon" type="image/png" href="6.png"/>
+<body>
+    <div class="content">
+    <div class="header">
+     <div class="Name ">
+     Antwan Beshay Labib
+        </div>
+        <div class="logo">
+            <img src="Screenshot_2025-12-17_175242-removebg-preview.png" alt="Logo" width="100%" height="100%"> 
+        </div>
+    </div>
+    <div class="Nam">
+        <h2>
+    Antwan Beshay Labib
+        </h2>
+    </div>
+
+
+    <div class="p">
+    <p>مرحبًا بك في عالمي الرقمي حيث تلتقي التقنية بالفن لتخلق تجاربى.</p>
+        </div>
+    <div class="img-card">
+        <div class="img-card1">
+            <img src="5.png" alt="Image 1">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="cv-button">
+        <button class="cv-button1" onclick="toggleQR()"> Cv </button>
+        <div class="qr-overlay" id="qrOverlay">
+  <div class="qr-box">
+    <img src="qr.png">
+    <p>Scan Now</p>
+    <span class="close" onclick="toggleQR()">✕</span>
+  </div>
+</div>
+<script>
+function toggleQR(){
+  document.getElementById("qrOverlay").classList.toggle("active");
+}
+
+function survay(){
+  document.getElementById("srvayOverlay").classList.toggle("active");
+}
+
+  if (performance.navigation.type === 1) { // 1 يعني Reload
+   window.location.href = "index.html"; // غيرها باسم ملف الـ Landing Page
+ }
+</script>
+
+<div class="srvay-button">
+        <button class="srvay-button1" onclick="survay()"> srvay </button>
+        <div class="srvay-overlay" id="srvayOverlay">
+  <div class="srvay-box">
+   <p>
+    <p>ققققققق</p>
+    <span class="srvay-close" onclick="survay()">✕</span>
+  </div>
+</div>
+
+<div class="projects">
+  <div class="project">
+    <span class="letter">M</span>
+    <span class="letter">Y</span>
+    <span class="letter">P</span>
+    <span class="letter">r</span>
+    <span class="letter">o</span>
+    <span class="letter">j</span>
+    <span class="letter">e</span>
+    <span class="letter">c</span>
+    <span class="letter">t</span>
+    </span>
+    </div>
+    <br>
+    <p>اكتشف بعض من مشاريعي المميزة التي تعكس شغفي في الابتكار والتصميم.</p>
+    
+    </div>
+ 
+    
+<footer class="footer">
+<h1>
+  <span class="name2">انطوان بشاي لبيب</h1>
+<p>حلول رقمية مبتكرة تجمع بين القوة والبساطة.</p>
+<div class="social">
+<a href="#"><i class=""fa-facebook></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+<small>© <span id="year">2025</span> انطوان بشاي — جميع الحقوق محفوظة.</small>
+</footer>
+
+
+</body>
+</html>

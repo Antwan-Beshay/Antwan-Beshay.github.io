@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="histroical.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antwan Beshay Labib – Front-End Developer & Cyber Security Enthusiast">
+
+    <title>
+      Antwan Beshay Labib
+    </title>
+    <link rel="icon" type="image/png" href="6.png">
+</head>
+<body>
+  <div class="intro">
+
+  <!-- الاسم الرئيسي -->
+
+  <div class="main-name">
+    <span class="letter" style="animation-delay:.2s">A</span>
+    <span class="letter" style="animation-delay:.4s">n</span>
+    <span class="letter" style="animation-delay:.6s">t</span>
+    <span class="letter" style="animation-delay:.8s">w</span>
+    <span class="letter" style="animation-delay:1.0s">a</span>
+    <span class="letter" style="animation-delay:1.2s">n</span>
+    <span class="space"> </span>
+    <span class="letter" style="animation-delay:1.4s">B</span>
+    <span class="letter" style="animation-delay:1.6s">e</span>
+    <span class="letter" style="animation-delay:1.8s">s</span>
+    <span class="letter" style="animation-delay:2.0s">h</span>
+    <span class="letter" style="animation-delay:2.2s">a</span>
+    <span class="letter" style="animation-delay:2.4s">y</span>
+  </div>
+ <span class="space2"> </span>
+  <div class="wellcome">
+    <span class="letter2" style="animation-delay:2.6s"> W</span>
+    <span class="letter2" style="animation-delay:2.8s"> e</span>
+    <span class="letter2" style="animation-delay:3.0s">l</span>
+    <span class="letter2" style="animation-delay:3.2s">l</span>
+    <span class="letter2" style="animation-delay:3.4s">c</span>
+    <span class="letter2" style="animation-delay:3.6s">o</span>
+    <span class="letter2" style="animation-delay:3.8s">m</span>
+    <span class="letter2" style="animation-delay:4.0s">e</span>
+    <span class="letter2" style="animation-delay:4.2s">!</span>
+    </div>
+  
+
+<div class="timer-wrapper">
+  <div class="timer-ring"></div>
+  <span class="timer-percent">0%</span>
+</div>
+
+
+
+<script>
+  const wrapper = document.querySelector(".timer-wrapper");
+  const percentText = document.querySelector(".timer-percent");
+  const ring = document.querySelector(".timer-ring");
+  const button = document.querySelector(".explore-button");
+
+  let percent = 0;
+  const duration = 10000; // 10 ثواني
+  const intervalTime = duration / 100;
+
+  setTimeout(() => {
+    // إظهار الدايرة
+    wrapper.style.opacity = "1";
+    wrapper.style.transition = "opacity 0.5s ease";
+
+    // تشغيل اللفة
+    ring.style.animation = "spin 10s linear forwards";
+
+    // عداد النسبة
+    const counter = setInterval(() => {
+      percent++;
+      percentText.textContent = percent + "%";
+
+      if (percent >= 100) {
+        clearInterval(counter);
+        window.location.href = "Secound.html";
+      }
+    }, intervalTime);
+
+    // لو المستخدم ضغط الزر
+    button.addEventListener("click", () => {
+      clearInterval(counter);
+      wrapper.style.display = "none";
+      window.location.href = "Secound.html";
+    });
+
+  }, 4600); // بعد ظهور الزر
+</script>
+  
+</body>
+</html>
